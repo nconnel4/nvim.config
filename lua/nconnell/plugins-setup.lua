@@ -44,6 +44,8 @@ return require("packer").startup(function(use)
 
 	-- icons
 	use("DaikyXendo/nvim-material-icon")
+	use("ChristianChiarulli/neovim-codicons")
+	use("nvim-tree/nvim-web-devicons")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
@@ -95,6 +97,19 @@ return require("packer").startup(function(use)
 
 	-- transparent background
 	use("xiyaowong/nvim-transparent")
+
+	-- testing
+	use({
+		"nvim-neotest/neotest",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+			"antoinemadec/FixCursorHold.nvim",
+			"nvim-neotest/neotest-plenary",
+			"nvim-neotest/neotest-python",
+			"marilari88/neotest-vitest",
+		},
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
