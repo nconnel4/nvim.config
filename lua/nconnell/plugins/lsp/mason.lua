@@ -27,7 +27,7 @@ mason_lspconfig.setup({
 		"pyright",
 		"sqls",
 		"dockerls",
-		"spectral",
+		-- "spectral",
 		"taplo",
 	},
 	-- auto-install configured servers (with lspconfig)
@@ -38,7 +38,7 @@ mason_null_ls.setup({
 	ensure_installed = {
 		"prettier",
 		"stylua",
-		"eslint_d",
+		"eslint",
 		"black",
 		"isort",
 		"mypy",

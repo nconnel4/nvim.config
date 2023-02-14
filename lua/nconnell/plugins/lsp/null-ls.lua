@@ -12,7 +12,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
-		diagnostics.eslint_d,
+		diagnostics.eslint,
 		formatting.black,
 		formatting.isort,
 		diagnostics.mypy,
